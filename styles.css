@@ -57,3 +57,71 @@ footer {
   color: #fff;
   padding: 10px;
 }
+
+/* Navigation hover */
+  nav a {
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    display: inline-block;
+    transition: background-color 0.25s ease;
+  }
+
+nav a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Main conten zoom on hover */
+.main-section {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Table styling */
+#projects table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+
+}
+
+#projects caption {
+  font-weight: 600;
+  padding: 8px 0;
+
+}
+
+#projects th,
+#projects td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align:; left;
+  vertical-align: top;
+
+}
+
+#projects thead th {
+  background-color: 444;
+  color: #fff;
+
+}
+
+/* Optional - subtle row hover so it feels interactive */
+#projects tbody tr {
+  transition: background-color 0.2s ease;
+
+}
+
+#projects tbody tr:hover {
+  background-color: #f7f7f7;
+
+}
+
+/* Ensure images in the table don't blow up the layout */
+#projects td img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+
+}
+
+
