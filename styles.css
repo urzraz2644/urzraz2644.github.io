@@ -297,4 +297,16 @@ nav ul li {
 
  }
 
+/* Flexbox row for name and email fields */
+.form-row {
+  display: flex;
+  gap: 15px;
 
+}
+
+.form-row input {
+  flex: 1;       /* makes inputs share equal width */
+
+}
+  
+  
