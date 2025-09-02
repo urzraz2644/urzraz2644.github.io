@@ -104,9 +104,11 @@ form {
   gap: 15px;                /* spacing between itwms */
   max-width: 600px;        /* keeps form from stretching too wide */
   margin: 20px auto;        /* centers the form on the page */
-  padding: 15px;            /* inner spacing */
+  padding: 20px;            /* inner spacing */
   background: #f9f9f9;      /* light gray background */
-  border-radius: 6px;      /* rounded corners */
+  border: 1px solid #ccc;   /* subtle border */
+  border-radius: 8px;      /* smoother corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);    /* soft shadow */
   
 }
 
@@ -123,6 +125,17 @@ body {
   background-color: #f2f2f2;     /* no gradient per spec */
 }
 
+@media (min-width: 768px) {
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+
+.form-row > div {
+  flex: 1;
+
+ }
+}
 
 #projects thead th {
   background-color: 444;
@@ -232,6 +245,7 @@ input, textarea {
 input: focus, textarea: focus {
   border-color: #3f51b5;   /* highlight border on focus */
   outline: none;
+  transition: border-color 0.3s ease;
 
 }
 
@@ -239,7 +253,8 @@ input[type="submit"] {
   background-color: #444;
   color: #fff;
   border: none;
-  cursor:pointer;
+  padding: 12px;
+  border-radius: 6px
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -321,3 +336,19 @@ nav ul li {
   flex: 1;       /* makes inputs share equal width */
 
 }
+
+@media (min-width: 768PX) {
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  .form-row > div {
+    flex: 1;
+  }
+}
+  
+
+
+
+
+  
